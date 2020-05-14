@@ -18,7 +18,7 @@ def info(data):
 
 def null(data):
     """ This function provides a summary of the null values in the dataframe"""
-    return print('Dataframe null values:', data,isnull().sum()
+    return print('Dataframe null values:', data,isnull().sum())
     
     
 
