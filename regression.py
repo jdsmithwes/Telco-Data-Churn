@@ -37,37 +37,37 @@ def preprocess(X, y):
     # Impute missing values with median using SimpleImputer
     impute = SimpleImputer(strategy='median')
 
-    X_train_imputed = impute.fit_transform(X_train_cont)
-    X_test_imputed = impute.transform(X_test_cont)
+    global X_train_imputed = impute.fit_transform(X_train_cont)
+    global X_test_imputed = impute.transform(X_test_cont)
 
     # Scale the train and test data
     ss = StandardScaler()
 
-    X_train_imputed_scaled = ss.fit_transform(X_train_imputed)
-    X_test_imputed_scaled = ss.transform(X_test_imputed)
+    global X_train_imputed_scaled = ss.fit_transform(X_train_imputed)
+    global X_test_imputed_scaled = ss.transform(X_test_imputed)
 
     # Create X_cat which contains only the categorical variables
     features_cat = [col for col in X.columns if X[col].dtype in [np.object]]
-    X_train_cat = X_train.loc[:, features_cat]
-    X_test_cat = X_test.loc[:, features_cat]
+    global X_train_cat = X_train.loc[:, features_cat]
+    global X_test_cat = X_test.loc[:, features_cat]
 
     # Fill nans with a value indicating that that it is missing
-    X_train_cat.fillna(value='missing', inplace=True)
-    X_test_cat.fillna(value='missing', inplace=True)
+    global X_train_cat.fillna(value='missing', inplace=True)
+    global X_test_cat.fillna(value='missing', inplace=True)
 
     # OneHotEncode Categorical variables
     ohe = OneHotEncoder(handle_unknown='ignore')
 
-    X_train_ohe = ohe.fit_transform(X_train_cat)
-    X_test_ohe = ohe.transform(X_test_cat)
+    global X_train_ohe = ohe.fit_transform(X_train_cat)
+    global X_test_ohe = ohe.transform(X_test_cat)
 
     columns = ohe.get_feature_names(input_features=X_train_cat.columns)
     cat_train_df = pd.DataFrame(X_train_ohe.todense(), columns=columns)
     cat_test_df = pd.DataFrame(X_test_ohe.todense(), columns=columns)
     
     # Combine categorical and continuous features into the final dataframe
-    X_train_all = pd.concat([pd.DataFrame(X_train_imputed_scaled), cat_train_df], axis=1)
-    X_test_all = pd.concat([pd.DataFrame(X_test_imputed_scaled), cat_test_df], axis=1)
+    global X_train_all = pd.concat([pd.DataFrame(X_train_imputed_scaled), cat_train_df], axis=1)
+    global X_test_all = pd.concat([pd.DataFrame(X_test_imputed_scaled), cat_test_df], axis=1)
     
     return X_train_all, X_test_all, y_train, y_test
 
