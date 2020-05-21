@@ -322,7 +322,7 @@ plt.title('Frequency of Churn')
 
 
 
-![png](output_14_1.png)
+![png](images/output_14_1.png)
 
 
 
@@ -388,59 +388,59 @@ for feature in features:
 
 
 
-![png](output_19_1.png)
+![png](images/output_19_1.png)
 
 
 
-![png](output_19_2.png)
+![png](images/output_19_2.png)
 
 
 
-![png](output_19_3.png)
+![png](images/output_19_3.png)
 
 
 
-![png](output_19_4.png)
+![png](images/output_19_4.png)
 
 
 
-![png](output_19_5.png)
+![png](images/output_19_5.png)
 
 
 
-![png](output_19_6.png)
+![png](images/output_19_6.png)
 
 
 
-![png](output_19_7.png)
+![png](images/output_19_7.png)
 
 
 
-![png](output_19_8.png)
+![png](images/output_19_8.png)
 
 
 
-![png](output_19_9.png)
+![png](images/output_19_9.png)
 
 
 
-![png](output_19_10.png)
+![png](images/output_19_10.png)
 
 
 
-![png](output_19_11.png)
+![png](images/output_19_11.png)
 
 
 
-![png](output_19_12.png)
+![png](images/output_19_12.png)
 
 
 
-![png](output_19_13.png)
+![png](images/output_19_13.png)
 
 
 
-![png](output_19_14.png)
+![png](images/output_19_14.png)
 
 
 
@@ -477,7 +477,7 @@ print(df_coef)
 
 
 
-![png](output_20_1.png)
+![png](images/output_20_1.png)
 
 
 
@@ -500,59 +500,59 @@ for feature in features:
 ```
 
 
-![png](output_21_0.png)
+![png](images/output_21_0.png)
 
 
 
-![png](output_21_1.png)
+![png](images/output_21_1.png)
 
 
 
-![png](output_21_2.png)
+![png](images/output_21_2.png)
 
 
 
-![png](output_21_3.png)
+![png](images/output_21_3.png)
 
 
 
-![png](output_21_4.png)
+![png](images/output_21_4.png)
 
 
 
-![png](output_21_5.png)
+![png](images/output_21_5.png)
 
 
 
-![png](output_21_6.png)
+![png](images/output_21_6.png)
 
 
 
-![png](output_21_7.png)
+![png](images/output_21_7.png)
 
 
 
-![png](output_21_8.png)
+![png](images/output_21_8.png)
 
 
 
-![png](output_21_9.png)
+![png](images/output_21_9.png)
 
 
 
-![png](output_21_10.png)
+![png](images/output_21_10.png)
 
 
 
-![png](output_21_11.png)
+![png](images/output_21_11.png)
 
 
 
-![png](output_21_12.png)
+![png](images/output_21_12.png)
 
 
 
-![png](output_21_13.png)
+![png](images/output_21_13.png)
 
 
 The above visualizations do not show any significant relationships between the selected feature variables and proxy for churn, account length. Based on the human eye, the regression line did seem to be positively sloped for some of the daytime characteristics.
@@ -1111,7 +1111,7 @@ sns.heatmap(cm, annot=True,annot_kws=annot_kws, fmt="d", linewidths=.2, square =
 
 
 
-![png](output_49_1.png)
+![png](images/output_49_1.png)
 
 
 
@@ -1144,7 +1144,7 @@ pyplot.show()
 
 
 
-![png](output_50_1.png)
+![png](images/output_50_1.png)
 
 
 
@@ -1161,7 +1161,7 @@ pyplot.show()
 ```
 
 
-![png](output_51_0.png)
+![png](images/output_51_0.png)
 
 
 
@@ -1173,7 +1173,7 @@ plt.show()
 ```
 
 
-![png](output_52_0.png)
+![png](images/output_52_0.png)
 
 
 
@@ -1185,7 +1185,7 @@ plt.show()
 ```
 
 
-![png](output_53_0.png)
+![png](images/output_53_0.png)
 
 
 
@@ -1197,7 +1197,7 @@ plt.show()
 ```
 
 
-![png](output_54_0.png)
+![png](images/output_54_0.png)
 
 
 
@@ -1211,7 +1211,7 @@ optimal_alpha(X_train,y_train)
 
 
 
-![png](output_55_1.png)
+![png](images/output_55_1.png)
 
 
 
@@ -1238,7 +1238,7 @@ plt.title('Confusion Matrix', size = 15)
 
 
 
-![png](output_56_2.png)
+![png](images/output_56_2.png)
 
 
 
@@ -1311,7 +1311,7 @@ sns.barplot(x=results['columns'],y=results['importances'], data=results)
 
 
 
-![png](output_59_1.png)
+![png](images/output_59_1.png)
 
 
 
@@ -1502,7 +1502,7 @@ pyplot.show()
 
 
 
-![png](output_64_1.png)
+![png](images/output_64_1.png)
 
 
 
@@ -1519,7 +1519,7 @@ pyplot.show()
 ```
 
 
-![png](output_65_0.png)
+![png](images/output_65_0.png)
 
 
 
@@ -1546,7 +1546,7 @@ plt.title('Confusion Matrix', size = 15)
 
 
 
-![png](output_66_2.png)
+![png](images/output_66_2.png)
 
 
 ## Logistic Model
@@ -1627,7 +1627,7 @@ plt.title('Confusion Matrix', size = 15)
 
 
 
-![png](output_70_2.png)
+![png](images/output_70_2.png)
 
 
 
@@ -1691,7 +1691,7 @@ plt.title('Confusion Matrix', size = 15)
 
 
 
-![png](output_74_2.png)
+![png](images/output_74_2.png)
 
 ## Recommendation
 As the feature selection algorithm highlighted, the four key feature variables that the telephone company must monitor are: international plan, voicemail plan, total day minutes and customer service calls.
